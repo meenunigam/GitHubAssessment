@@ -95,7 +95,7 @@ public Response createRepo(String repoName) throws IOException {
 		//write the modified json back to the file
 		objMap.writeValue(updateData, rootNode);
 		
-		//String requestBody = "{\"name\":\" + repoName + \",\"description\":\"Thisisyourfirstrepo!\",\"homepage\":\"https://github.com\",\"private\":false,\"}";
+		
 		reqSpec = RestAssured.given();
 		reqSpec.headers(getHeaders());
 		Response response = null;
