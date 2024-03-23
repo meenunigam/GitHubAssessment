@@ -4,13 +4,10 @@
     <listeners>
         <listener class-name="com.GitHub.listeners.TestEventListenersUtility"></listener>
     </listeners>
-    <test thread-count="5" name="GitHub Repos">
+    <test thread-count="1" name="GitHub Repos">
 		
         <classes>
-            <class name="com.GitHub.API.CreateRepo"/>
-            <class name="com.GitHub.API.deleteRepo"/>
-            <class name="com.GitHub.API.GetRepo"/>
-            <class name="com.GitHub.API.UpdateRepo"/>
+            <class name="com.GitHub.CRUD.GitHubCRUDOper"/>
         </classes>
     </test>
    <!--  <test thread-count="5" name="Add data and delete data functionality">
