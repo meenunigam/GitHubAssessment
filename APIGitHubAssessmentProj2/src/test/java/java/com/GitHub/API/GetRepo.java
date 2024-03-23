@@ -34,13 +34,13 @@ public class GetRepo {
 	
 	@Test(priority=1)
 	public void getUserOneRepo() {
-		Header BearerToken = new Header("Bearer", "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");
+		Header BearerToken = new Header("Bearer", "");
 		
 		
 		Response res= RestAssured
 		.given()
 			.log().all()
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 		.when()
 		 .get("/repos/meenunigam/TestPostMan");
 		
@@ -68,12 +68,12 @@ public class GetRepo {
 	
 	@Test
 	public void getNonexistingRepo() {
-		Header BearerToken = new Header("Bearer", "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");
+		Header BearerToken = new Header("Bearer", "");
 		
 		
 		Response res= RestAssured
 		.given()
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 		.when()
 		 .get("/repos/meenunigam/Junk");
 		
@@ -93,12 +93,12 @@ public class GetRepo {
 	
 	@Test
 	public void getAllRepos() {
-		Header BearerToken = new Header("Bearer", "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");
+		Header BearerToken = new Header("Bearer", "");
 		
 		
 		Response res= RestAssured
 		.given()
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 		.when()
 		 	.get("/user/repos");
 		 res.then()

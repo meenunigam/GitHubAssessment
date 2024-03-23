@@ -29,7 +29,7 @@ public class UpdateRepo {
 		Response res= RestAssured
 		.given()
 			.contentType(ContentType.JSON)
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 			.body(updateData)
 		.when()
 		 .patch("/repos/meenunigam/sample");

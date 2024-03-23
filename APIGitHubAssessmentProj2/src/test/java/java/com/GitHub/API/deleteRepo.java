@@ -25,7 +25,7 @@ public class deleteRepo {
 		Response res= RestAssured
 		.given()
 			.contentType(ContentType.JSON)
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 		.when()
 		 .delete("/repos/meenunigam/Hello-World2");
 		
@@ -45,7 +45,7 @@ public class deleteRepo {
 		Response res= RestAssured
 		.given()
 			.contentType(ContentType.JSON)
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 		.when()
 		 .delete("/repos/meenunigam/NoRepo");
 		

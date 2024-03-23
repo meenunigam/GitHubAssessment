@@ -27,7 +27,7 @@ public class CreateRepo {
 		Response res= RestAssured
 		.given()
 			.contentType(ContentType.JSON)
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 			.body(createData)
 		.when()
 		 .post("/user/repos");
@@ -60,7 +60,7 @@ public class CreateRepo {
 		Response res= RestAssured
 		.given()
 			.contentType(ContentType.JSON)
-			.header("Authorization", "Bearer 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")
+			.header("Authorization", "Bearer ")
 			.body(updateData)
 		.when()
 		 .post("/user/repos");
